@@ -1047,7 +1047,7 @@ def setup_parser():
     vq_parser.add_argument("-il",   "--image_labels", type=str, help="Image prompts", default=None, dest='image_labels')
     vq_parser.add_argument("-ilw",  "--image_label_weight", type=float, help="Weight for image prompt", default=1.0, dest='image_label_weight')
     vq_parser.add_argument("-i",    "--iterations", type=int, help="Number of iterations", default=None, dest='iterations')
-    vq_parser.add_argument("-se",   "--save_every", type=int, help="Save image iterations", default=100, dest='save_every')
+    vq_parser.add_argument("-se",   "--save_every", type=int, help="Save image iterations", default=10, dest='save_every')
     vq_parser.add_argument("-de",   "--display_every", type=int, help="Display image iterations", default=20, dest='display_every')
     vq_parser.add_argument("-ove",  "--overlay_every", type=int, help="Overlay image iterations", default=None, dest='overlay_every')
     vq_parser.add_argument("-ovo",  "--overlay_offset", type=int, help="Overlay image iteration offset", default=0, dest='overlay_offset')
@@ -1236,7 +1236,7 @@ def process_args(vq_parser, namespace=None):
     }
     quality_to_iterations_table = {
         'draft': 100,
-        'normal': 150,
+        'normal': 100,
         'better': 100,
         'best': 100
     }
