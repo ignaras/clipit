@@ -1099,6 +1099,9 @@ def setup_parser():
 
     return vq_parser
 
+from google.colab import files
+files.download('output.png') 
+
 square_size = [144, 144]
 widescreen_size = [160, 90]  # at the small size this becomes 192,112
 
