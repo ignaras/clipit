@@ -1235,10 +1235,10 @@ def process_args(vq_parser, namespace=None):
         'best': 'RN50x4,ViT-B/32,ViT-B/16'
     }
     quality_to_iterations_table = {
-        'draft': 200,
-        'normal': 350,
-        'better': 500,
-        'best': 500
+        'draft': 100,
+        'normal': 150,
+        'better': 100,
+        'best': 100
     }
     quality_to_scale_table = {
         'draft': 1,
